@@ -45,7 +45,7 @@ app.post("/api/bambulab/device-version", async (req, res) => {
     }
 });
 
-app.post("/api/github/devurl-update", async (req, res) => {
+app.post("/api/github/update-file", async (req, res) => {
     const { printerSerial, currentVersion } = req.body;
 
     const _ = {
@@ -56,7 +56,7 @@ app.post("/api/github/devurl-update", async (req, res) => {
         const response = await GitHubFileUpdater.updateFile(_, currentVersion);
         res.json(response);
     } catch (error) {
-        console.error("Error fetching device-url update:", error);
+        console.error("Error fetching update file:", error);
         res.status(500).json({ error: "Internal Server Error" });
     }
 });
