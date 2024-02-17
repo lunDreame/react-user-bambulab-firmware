@@ -1,0 +1,202 @@
+.app-container {
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.main-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input-field.invalid {
+  border-color: #ff6347;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+.login-msg {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.msg.invalid {
+  color: #ff6347;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  animation: slideIn 0.3s ease-in-out;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.info-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.info-container h2 {
+  font-size: 23px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.description {
+  font-size: 16px;
+  text-align: center;
+}
+
+.release-note-button {
+  background-color: transparent;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+.release-note-button:hover {
+  color: darkblue;
+}
+
+.ams {
+  font-size: 16px;
+  text-align: center;
+  margin-left: 35px;
+}
+
+.ams-value {
+  margin-left: 10px;
+}
+
+.repo-update-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.repo-update-button:hover {
+  background-color: #45a049;
+}
+
+.repo-update-button:active {
+  background-color: #3e8e41;
+}
+
+.repo-msg {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.release-note {
+  white-space: pre-line;
+}
+
+.confirmation-button {
+  margin-right: 10px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.confirmation-button:hover {
+  background-color: #45a049;
+}
+
+.confirmation-button:active {
+  background-color: #3e8e41;
+}
