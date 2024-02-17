@@ -14,7 +14,7 @@ const corsOptions = {
     ],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     preflightContinue: false,
-    optionsSuccessStatus: 405,
+    optionsSuccessStatus: 204,
     credentials: true,
 };
 
