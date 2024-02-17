@@ -9,7 +9,7 @@ const port = process.env.PORT || 8080;
 const corsOptions = {
     origin: [
         "https://port-0-user-bambulab-firmware-backend-5b8v2nlsa3msrp.sel5.cloudtype.app/",
-        "",
+        "https://web-user-bambulab-firmware-frontend-5b8v2nlsa3msrp.sel5.cloudtype.app/",
         "http://localhost:8080",
     ],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
