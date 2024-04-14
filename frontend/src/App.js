@@ -102,11 +102,11 @@ function App() {
               onChange={handleSerialInputChange}
               onFocus={handleInputFocus}
               onBlur={handleInputBlur}
-              placeholder="Printer Serial Number"
+              placeholder="printer serial number"
               className={`input-field ${isInputFocused && !isValidSerial ? 'invalid' : ''}`}
             />
             {isInputFocused && !isValidSerial && (
-              <p className="msg invalid">Invalid serial number.</p>
+              <p className="msg invalid">Invalid serial number</p>
             )}
           </div>
           <h2 className="sub-title">Bambu Lab Account</h2>
@@ -116,7 +116,7 @@ function App() {
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              placeholder="Email or Phone Number"
+              placeholder="Email or phone number"
               className="input-field"
             />
           </div>
@@ -125,7 +125,7 @@ function App() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Password"
+              placeholder="password"
               className="input-field"
             />
           </div>
@@ -134,7 +134,7 @@ function App() {
         </>
       ) : (
         <div className="info-container">
-          <h2>Release Note & Repo Update</h2>
+          <h2>"Release notes and repository updates</h2>
           <div className="release-note-container">
             <p className="description">
               {printerSerial}:
@@ -149,7 +149,7 @@ function App() {
               AMS: <span className="ams-value">{JSON.stringify(currentVersion.ams[0]) || 'N/A'}</span>
             </p>
           </div>
-          <button onClick={handleRepoUpdateClick} className="repo-update-button">Repo Update</button>
+          <button onClick={handleRepoUpdateClick} className="repo-update-button">repository updates</button>
           {repositoryMessage && <p className="repo-msg">{repositoryMessage}</p>}
         </div>
       )}
