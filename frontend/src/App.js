@@ -94,7 +94,7 @@ function App() {
     <div className="app-container">
       {!isLoggedIn ? (
         <>
-          <h1 className="main-title">Printer Firmware Provisioning</h1>
+          <h1 className="main-title">Printer firmware provided</h1>
           <div className="input-container">
             <input
               type="text"
